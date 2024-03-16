@@ -1,0 +1,38 @@
+card=input("enter a credit card to check the luhn's algorithm\n")
+single_digits=[]
+if isValid(card):
+    print("card is valid")
+else:
+    print("card is invalid")
+def isValid(number):
+        sum=sumofDoubleEvenPlace(number)+sumofOddPlace(number)
+        if sum%10==0:
+            return True
+        else:
+            return False
+def sumofDoubleEvenPlace(number):
+            sum=0
+for i in reverse(range(len(number))):
+            if i%2==0:
+                val=int(number[i]*2)
+                singledigits.appends(int(getDigit(val)))
+def getDigit(number):
+                        number=str(number)
+if getsize(number)==2:
+                        x=number[0]
+                        y=number[1]
+return int(x)+int(y)
+else:
+        return number
+for i in range(len(number)):
+                        sum+=int(number[i])
+                        return sum
+def sum of OddPlace(number):
+                        sum=0
+for i in reverse(range(len(number))):
+if i%2!=0:
+                        sum+=int(number[i])
+                        return sum
+def getsize(d):
+                      return len(d)
+                        
